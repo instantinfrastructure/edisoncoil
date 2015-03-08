@@ -1,1 +1,6 @@
 Readme keyboard
+
+REading usb keyboard
+https://github.com/kui/revdev/tree/master/sample
+
+Be sure to install coreutils before installing python!
