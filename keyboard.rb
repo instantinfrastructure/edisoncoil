@@ -9,7 +9,9 @@ unless ARGV[0]
 /dev/input/by-id/usb-Plantronics_Wireless_Audio_Plantronics_Wireless_Audio-event-if03
 /dev/input/by-id/usb-Kinesis_Footpedal-if01-event-mouse
 }.each do |device|
-    IO.popen("#{__FILE__} #{device}")
+    begin
+      IO.popen("#{__FILE__} #{device}")
+    end
   end
   sleep 10000 while true
   quit
